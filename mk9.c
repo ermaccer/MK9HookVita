@@ -14,6 +14,11 @@ int HookSetCharacter(int player, int unk, char* name)
 		if (MK9Menu_Get().p1Modifier)
 			name = MK9Menu_Get().p1ModifierChar;
 	}
+	if (player == 1)
+	{
+		if (MK9Menu_Get().p2Modifier)
+			name = MK9Menu_Get().p2ModifierChar;
+	}
 
 	return TAI_CONTINUE(int, HOOK_REFS[0], player, unk, name);
 }

@@ -1,5 +1,15 @@
 #pragma once
 
+enum eMenuItems {
+	MENU_P1MODIFIER,
+	MENU_P1MODIFIER_CHAR,
+	MENU_P2MODIFIER,
+	MENU_P2MODIFIER_CHAR,
+	MENU_STAGE,
+	MENU_STAGEMODIFIER,
+	TOTAL_MENUS
+};
+
 struct menu {
 	int p1Modifier;
 	int p2Modifier;
